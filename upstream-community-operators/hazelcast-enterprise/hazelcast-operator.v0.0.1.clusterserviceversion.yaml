@@ -15,7 +15,7 @@ metadata:
             "tag": "3.11.2"
           },
           "hazelcast": {
-            "licenseKeySecretName": "hz-license-key"
+            "licenseKeySecretName": "hz-license-key-secret"
           },
           "securityContext": {
             "runAsUser": 65534,
@@ -23,7 +23,7 @@ metadata:
           }
        }
       }]
-    categories: "Database"
+    categories: "In-Memory Computing Platform"
     certified: false
     containerImage: hazelcast/hazelcast-enterprise-operator:0.0.1
     createdAt: 2019-03-14T09:58:52Z
@@ -48,7 +48,7 @@ spec:
 
     Add a Secret within the Project that contains the Hazelcast License Key. If you don't have one, get a trial key from this [link](https://hazelcast.com/hazelcast-enterprise-download/trial/).
 
-        $ kubectl create secret generic hz-license-key --from-literal=key=LICENSE-KEY-HERE
+        $ kubectl create secret generic hz-license-key-secret --from-literal=key=LICENSE-KEY-HERE
 
     ### Configuration
 
