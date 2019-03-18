@@ -159,7 +159,7 @@ spec:
   - caching
   links:
   - name: Hazelcast Operator Deploy Guide
-    url: https://github.com/hazelcast/hazelcast-code-samples/tree/master/hazelcast-integration/operator-framework
+    url: https://github.com/hazelcast/hazelcast-operator
   maintainers:
   - name: leszko
     email: rafal@hazelcast.com
